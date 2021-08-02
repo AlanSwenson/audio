@@ -8,6 +8,7 @@ flask = "*"
 environs = "*"
 Jinja2 = "*"
 gunicorn = "*"
+libsass = "*"
 
 [dev-packages]
 black = "*"

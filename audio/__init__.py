@@ -14,7 +14,7 @@ def create_app():
     @app.route("/", methods=["GET"])
     def root():
         return render_template(
-            "layout.html",
+            "home.html",
             title="Sample Title",
         )
 

@@ -1,7 +1,24 @@
+
+// @import 'https://fonts.googleapis.com/css2?family=Raleway:slnt,wght,ital@-15..0,100..900,0..1&display=swap'
+
+@font-face
+    font-family: 'Raleway'
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:slnt,wght,ital@-15..0,100..900,0..1&display=swap') format('woff2 supports variations')
+    font-weight: 100 900
+
+$font-stack: 'Raleway', sans-serif
+
 body
-    background-color: #e5e5e5
+    background-color: black
+    // font-family: $font-stack
 
 h1
     color: white
     text-transform: uppercase
-    font-size: 3em
+    font-size: 4em
+    background-color: #a5a4a4
+    font-variation-settings: 'wght' 100
+    transition: font-variation-settings 0.3s ease
+
+    &:hover
+        font-variation-settings: "wght" 600

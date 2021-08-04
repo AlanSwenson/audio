@@ -6,12 +6,20 @@
         <div class="nav-icons-container align-items-center d-flex">
             <a href="#"><i class="fas fa-headphones-alt"></i></a>
             <a href="#"><i class="fas fa-film"></i></i></a>
-            <a href="#"><i class="fas fa-infinity"></i></a>
+            <a href="#" id="infinite"><i class="fas fa-infinity"></i></a>
         </div>
 
     </header>
 
 </div>
+
+<script>
+    // With the above scripts loaded, you can call `tippy()` with a CSS
+    // selector and a `content` prop:
+    tippy('#infinite', {
+        content: 'take me to the infinite',
+    });
+</script>
 
 
 

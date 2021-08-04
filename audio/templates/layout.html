@@ -21,6 +21,7 @@
     <!-- Tippy -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
     <title>{{ title }}</title>
 </head>
@@ -39,7 +40,7 @@
 
 
     <!-- Custom JS -->
-
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 
 </body>
 

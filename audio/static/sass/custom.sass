@@ -1,18 +1,12 @@
 
-// @import 'https://fonts.googleapis.com/css2?family=Raleway:slnt,wght,ital@-15..0,100..900,0..1&display=swap'
-
-@font-face
-    font-family: 'Raleway'
-    src: url('https://fonts.googleapis.com/css2?family=Raleway:slnt,wght,ital@-15..0,100..900,0..1&display=swap') format('woff2 supports variations')
-    font-weight: 100 900
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap'
 
 $font-stack: 'Raleway', sans-serif
 $contrast-color: #343a40
-$cool-gray: #a5a4a4
 
 body
     background-color: $contrast-color
-    // font-family: $font-stack
+    font-family: $font-stack
 
 header nav
     background: rgb(2,0,36)
@@ -25,7 +19,7 @@ header nav
 
     a
         transition: font-variation-settings 0.3s ease
-        font-size: 1.5em
+        font-size: 1.2em
         font-variation-settings: 'wght' 200
         color: white
         text-decoration: none
@@ -34,33 +28,33 @@ header nav
             color: white
             text-decoration: none
 
-        &:hover
-            font-variation-settings: "wght" 600
-
         i
             padding: 0 10px
             transition: font-size 0.3s, color .8s
 
             &:hover
-                font-size: 1.8em
+                font-size: 1.5em
                 color: $contrast-color
 
 h1
-    font-size: 4em
+    margin-bottom: 0
+    font-size: 2.2em
     font-variation-settings: 'wght' 100
-    transition: font-variation-settings 0.3s ease
+    letter-spacing: 10px
+    transition: font-variation-settings 0.3s ease, letter-spacing 0.3s ease
 
     &:hover
-        font-variation-settings: "wght" 600
+        font-variation-settings: "wght" 200
+        letter-spacing: 20px
 
 main
-    height: 1000px
+    min-height: 1000px
     background-color: #000
 
 footer
     color: white
-
-    height: 100px
+    height: 80px
+    font-size: 1em
 
     .background
         filter: blur(6px)

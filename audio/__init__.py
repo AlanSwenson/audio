@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, send_from_directory
 
 from sassutils.wsgi import SassMiddleware
 
+from .config import setup_configuration
+
 
 def create_app():
     app = Flask(__name__, static_url_path="/static")
@@ -13,9 +15,16 @@ def create_app():
 
     @app.route("/", methods=["GET"])
     def root():
+        ctx = {}
+        ctx["title"] = setup_configuration.get("title", "Alan's Audio")
+        ctx["year"] = setup_configuration.get("year", "2020")
+        ctx["email"] = setup_configuration.get("email")
+        ctx["instagram"] = setup_configuration.get("instagram", "http://instagram.com")
+        ctx["youtube"] = setup_configuration.get("youtube", "http://youtube.com")
+
         return render_template(
             "home.html",
-            title="Sample Title",
+            ctx=ctx,
         )
 
     # serve files for robots

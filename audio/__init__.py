@@ -21,6 +21,9 @@ def create_app():
         ctx["email"] = setup_configuration.get("email")
         ctx["instagram"] = setup_configuration.get("instagram", "http://instagram.com")
         ctx["youtube"] = setup_configuration.get("youtube", "http://youtube.com")
+        ctx["google_site_verification"] = setup_configuration.get(
+            "google_site_verification"
+        )
 
         return render_template(
             "home.html",

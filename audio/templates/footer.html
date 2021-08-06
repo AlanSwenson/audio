@@ -4,18 +4,19 @@
     <div class="container d-flex justify-content-around align-items-center zz-top">
         <div></div>
         <div class="d-flex justify-content-center">
-            <a href="{{ ctx.instagram }}" target="_blank" data-tippy-content="instagram"><i
-                    class="fab fa-instagram fa-lg"></i></a>
-            <a href="{{ ctx.youtube }}" target="_blank" data-tippy-content="youtube"><i
-                    class="fab fa-youtube fa-lg"></i></a>
-            <a href="mailto:{{ ctx.email }}" data-tippy-content="email"><i class="far fa-envelope fa-lg"></i></a>
+            <a href="{{ ctx.instagram }}" target="_blank" rel="noopener" data-tippy-content="instagram"><i
+                    class="fab fa-instagram fa-lg"></i><span class="visually-hidden">instagram</span></a>
+            <a href="{{ ctx.youtube }}" target="_blank" rel="noopener" data-tippy-content="youtube"><i
+                    class="fab fa-youtube fa-lg"></i><span class="visually-hidden">youtube</span></a>
+            <a href="mailto:{{ ctx.email }}" data-tippy-content="email"><i class="far fa-envelope fa-lg"></i><span
+                    class="visually-hidden">email</span></a>
         </div>
         <div class="d-flex flex-row">
             <div>
                 ©
                 {{ ctx.year }}
             </div>
-            <a href="https://alanswenson.dev" target="_blank" data-tippy-content="developer website">
+            <a href="https://alanswenson.dev" target="_blank" rel="noopener" data-tippy-content="developer website">
                 alanswenson.dev</a>
 
         </div>

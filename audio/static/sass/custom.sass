@@ -8,6 +8,9 @@ body
     background-color: $contrast-color
     font-family: $font-stack
 
+.nav-spacer
+    height: 80px
+
 header nav
     background: rgb(2,0,36)
     background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(149,149,149,1) 0%, rgba(0,0,0,1) 100%)
@@ -52,6 +55,21 @@ main
     background-color: #000
     background-position: center
     background-size: cover
+
+.listen-container
+    a
+
+    img
+        margin: 20px
+        max-width: 350px
+
+        -webkit-box-shadow: 0 8px 6px -6px #000000
+        -moz-box-shadow: 0 8px 6px -6px #000000
+        box-shadow: 0 8px 6px -6px #000000
+
+        &:hover
+            cursor: pointer
+            outline: 2px solid white
 
 footer
     color: white

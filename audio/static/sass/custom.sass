@@ -1,5 +1,9 @@
 
 @import 'https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap'
+/* import the necessary Bootstrap files */
+@import "../bootstrap/scss/functions"
+@import "../bootstrap/scss/variables"
+@import "../bootstrap/scss/mixins/image"
 
 $font-stack: 'Raleway', sans-serif
 $contrast-color: #343a40
@@ -58,6 +62,7 @@ main
 
 .listen-container
     img
+        @include img-fluid
         margin: 10px
         max-width: 350px
         outline-color: black
@@ -120,3 +125,6 @@ footer
 
 .zz-top
     z-index: 100
+
+/* finally, import Bootstrap to set the changes! */
+@import "../bootstrap/scss/bootstrap"

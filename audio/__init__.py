@@ -31,9 +31,12 @@ def create_app():
         )
 
     # serve files for robots
-    # @app.route("/sitemap.xml")
     @app.route("/robots.txt")
     def static_from_root():
         return send_from_directory(app.static_folder, request.path[1:])
+
+    # @app.route("/manifest.json")
+    # def manifest():
+    #     return send_from_directory(app.static_folder, "manifest.json")
 
     return app

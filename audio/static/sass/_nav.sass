@@ -1,0 +1,45 @@
+/* start of _nav.sass */
+
+.nav-spacer
+    height: 80px
+
+header nav
+    background: rgb(2,0,36)
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(149,149,149,1) 0%, rgba(0,0,0,1) 100%)
+    color: white
+    text-transform: uppercase
+    -webkit-box-shadow: 0 8px 6px -6px #000000
+    -moz-box-shadow: 0 8px 6px -6px #000000
+    box-shadow: 0 8px 6px -6px #000000
+
+    a
+        transition: font-variation-settings 0.3s ease
+        font-size: 1.2em
+        font-variation-settings: 'wght' 200
+        color: white
+        text-decoration: none
+
+        &:visited
+            color: white
+            text-decoration: none
+
+        i
+            padding: 0 10px
+            transition: font-size 0.3s, color .8s
+
+            &:hover
+                font-size: 1.5em
+                color: $contrast-color
+
+    h1
+        margin-bottom: 0
+        font-size: 2.2em
+        font-variation-settings: 'wght' 100
+        letter-spacing: 10px
+        transition: font-variation-settings 0.3s ease, letter-spacing 0.3s ease
+
+        &:hover
+            font-variation-settings: "wght" 200
+            letter-spacing: 20px
+
+/* end of _nav.sass */

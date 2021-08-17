@@ -1,0 +1,38 @@
+/* start of _footer.sass */
+
+footer
+    color: white
+    height: 50px
+    font-size: 1em
+
+    .background
+        filter: blur(6px)
+        position: absolute
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+
+    &::before
+        content: ""
+        position: absolute
+        top: -1px
+        right: 0px
+        bottom: 0px
+        left: 0px
+        background-color: rgba(0,0,0,0.85)
+
+    a
+        color: white
+        padding-right: 16px
+        text-decoration: none
+
+        &:visited
+            color: white
+
+        &:hover
+            color: white
+    div
+        padding-right: 10px
+
+/* end of _footer.sass */

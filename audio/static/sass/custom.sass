@@ -5,54 +5,13 @@
 @import "../bootstrap/scss/variables"
 @import "../bootstrap/scss/mixins/image"
 
-$font-stack: 'Raleway', sans-serif
-$contrast-color: #343a40
+@import vars, listen, nav, footer
+
+// Main Area
 
 body
     background-color: $contrast-color
     font-family: $font-stack
-
-.nav-spacer
-    height: 80px
-
-header nav
-    background: rgb(2,0,36)
-    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(149,149,149,1) 0%, rgba(0,0,0,1) 100%)
-    color: white
-    text-transform: uppercase
-    -webkit-box-shadow: 0 8px 6px -6px #000000
-    -moz-box-shadow: 0 8px 6px -6px #000000
-    box-shadow: 0 8px 6px -6px #000000
-
-    a
-        transition: font-variation-settings 0.3s ease
-        font-size: 1.2em
-        font-variation-settings: 'wght' 200
-        color: white
-        text-decoration: none
-
-        &:visited
-            color: white
-            text-decoration: none
-
-        i
-            padding: 0 10px
-            transition: font-size 0.3s, color .8s
-
-            &:hover
-                font-size: 1.5em
-                color: $contrast-color
-
-h1
-    margin-bottom: 0
-    font-size: 2.2em
-    font-variation-settings: 'wght' 100
-    letter-spacing: 10px
-    transition: font-variation-settings 0.3s ease, letter-spacing 0.3s ease
-
-    &:hover
-        font-variation-settings: "wght" 200
-        letter-spacing: 20px
 
 main
     min-height: 1000px
@@ -60,57 +19,7 @@ main
     background-position: center
     background-size: cover
 
-.listen-container
-    img
-        @include img-fluid
-        margin: 10px
-        max-width: 350px
-        outline-color: black
-
-        -webkit-box-shadow: 0 8px 6px -6px #000000
-        -moz-box-shadow: 0 8px 6px -6px #000000
-        box-shadow: 0 8px 6px -6px #000000
-        transition: outline-color .7s, opacity .7s
-
-        &:hover
-            cursor: pointer
-            outline: 2px solid white
-            opacity: .7
-
-footer
-    color: white
-    height: 50px
-    font-size: 1em
-
-    .background
-        filter: blur(6px)
-        position: absolute
-        width: 100%
-        height: 100%
-        background-position: center
-        background-size: cover
-
-    &::before
-        content: ""
-        position: absolute
-        top: -1px
-        right: 0px
-        bottom: 0px
-        left: 0px
-        background-color: rgba(0,0,0,0.85)
-
-    a
-        color: white
-        padding-right: 16px
-        text-decoration: none
-
-        &:visited
-            color: white
-
-        &:hover
-            color: white
-    div
-        padding-right: 10px
+// Custom Tippy Theme
 
 .tippy-box[data-theme~='synthwave']
     background: linear-gradient(131deg, rgba(131,58,180,1) 0%, rgba(141,29,253,1) 50%, rgba(241,69,252,1) 100%)
@@ -121,8 +30,8 @@ footer
     &[data-placement^='top'] > .tippy-arrow::before
         border-top-color: #8d1dfd
 
-// utils
-
+// Utils
+// TODO: if there is more utils added, make a _util.sass file
 .zz-top
     z-index: 100
 
